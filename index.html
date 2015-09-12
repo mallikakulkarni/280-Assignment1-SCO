@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #maindiv {
+            height: 40%;
+            width: 50%;
+            border-radius: 10px;
+            border-color: black;
+            border-style: solid;
+            border-width: thin;
+            top: 30%;
+            left: 25%;
+            position: absolute;
+        }
+        #staticdiv {
+            background-color: lightgray;
+            border-bottom-color: darkgray;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            height: 15%;
+            text-align: center;
+            line-height: 300%;
+            vertical-align: middle;
+        }
+        #logindiv {
+            height: 85%;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .textarea {
+            width: 15em;
+        }
+        .text {
+            width: 10em;
+        }
+        table {
+            position: relative;
+            padding-top: 40px;
+            left: 20%;
+        }
+        button {
+            width: 5em;
+            border-color: black;
+            border-style: solid;
+            border-width: thin;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+    </style>
+    <script>
+        function proceedToQuestions() {
+            var answerKeys = {
+                math: 0,
+                lang : 0,
+                video : 0
+            };
+            (function (global) {
+                global.localStorage.setItem("answerKeys", answerKeys);
+            }(window));
+            location.href='./MathQuestion.html';
+        }
+    </script>
+</head>
+<body>
+    <div id="maindiv">
+        <header>
+            <div id="staticdiv">
+                <span><b>User Login</b></span>
+            </div>
+        </header>
+        <div id="logindiv">
+            <table>
+                <tr>
+                    <td class="text">
+                        <b>Username:</b>
+                    </td>
+                    <td class="textarea">
+                        <textarea style="width: 20em"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text">
+                        <b>Password:</b>
+                    </td>
+                    <td class="textarea">
+                        <textarea style="width: 20em"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text">
+                        <a href="#">Create Account/Forgot</a>
+                    </td>
+                    <td>
+                        <button onclick="proceedToQuestions()">Login</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

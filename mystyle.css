@@ -1,0 +1,58 @@
+#maindiv {
+    height: 80%;
+    width: 80%;
+    border-radius: 10px;
+    border-color: black;
+    border-style: solid;
+    border-width: thin;
+    top: 10%;
+    left: 10%;
+    position: absolute;
+}
+#staticdiv {
+    background-color: lightgray;
+    border-bottom-color: darkgray;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 15%;
+    text-align: center;
+    line-height: 300%;
+    vertical-align: middle;
+}
+#questiondiv {
+    height: 85%;
+    text-align: center;
+    vertical-align: middle;
+}
+.textarea {
+    width: 15em;
+}
+.text {
+    width: 10em;
+}
+table {
+    position: relative;
+    padding-top: 40px;
+    left: 20%;
+}
+button {
+    width: 5em;
+    border-color: black;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 10px;
+    background-color: white;
+}
+#question {
+    float: left;
+    width: 60%;
+}
+#paragraph {
+    width: 40%;
+    float: left;
+}
+
+#figure {
+    width: 40%;
+    float: left;
+}
