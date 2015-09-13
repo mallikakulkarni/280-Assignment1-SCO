@@ -56,3 +56,27 @@ button {
     width: 40%;
     float: left;
 }
+
+#mark1, #mark2 {
+    background-color: yellow;
+}
+
+#quant.contracted, #verb.contracted, #video.contracted {
+    margin-top: 5px;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid black;
+    float: left;
+}
+
+#quant.expanded, #verb.expanded, #video.expanded {
+    margin-top: 5px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid black;
+    float: left;
+}

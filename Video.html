@@ -8,13 +8,11 @@
 </head>
 <body>
 <div id="maindiv">
-    <header>
         <div id="staticdiv">
             <span><b>Question 4</b></span>
         </div>
-    </header>
     <div id="questiondiv">
-        <div id="question" data-correct-answer="a">
+        <div id="question" answer="a">
             <p>Watch the video and answer the following question <br>
             What is the source as mentioned in the video?</p>
             <div style="float: left;">
@@ -41,24 +39,22 @@
             </div>
         </div>
         <div id="video" style="float: left">
-            <video width="300" height="300" src="./BugsBunny.mp4" controls></video>
+            <iframe width="300" height="300" src="./BugsBunny.mp4" controls></iframe>
             <p>
                 Video courtesy of
                 <a href="http://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>.
             </p>
         </div>
-        <footer>
-            <div style="clear: left">
-                <button style="border-color: black; width: 15em; border-radius: 5px;"
-                        onclick="clickSubmit('./Survey.html'+window.location.search+'&video=')">
-                    <b>Submit and Next Question</b>
-                </button>
-                <button style="border-color: black; width: 15em; border-radius: 5px;"
-                        onclick="clickReset()">
-                    <b>Cancel and clear solution</b>
-                </button>
-            </div>
-        </footer>
+        <div style="clear: left">
+            <button style="border-color: black; width: 15em; border-radius: 5px;"
+                    onclick="clickSubmit('./Survey.html'+window.location.search+'&video=')">
+                <b>Submit and Next Question</b>
+            </button>
+            <button style="border-color: black; width: 15em; border-radius: 5px;"
+                    onclick="clickReset()">
+                <b>Cancel and clear solution</b>
+            </button>
+        </div>
     </div>
 </div>
 </body>

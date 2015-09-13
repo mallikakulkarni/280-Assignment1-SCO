@@ -2,8 +2,9 @@ function clickSubmit(nextpage) {
     var radios = document.getElementsByName("mark1");
     var useranswer = getUserAnswer(radios);
     var question = document.getElementById("question");
-    var isAnswerCorrect = (question.getAttribute("data-correct-answer") === useranswer) ? 1 : 0;
-    if (question.getAttribute("data-question-type") === "quant") {
+    var answer = question.getAttribute("answer");
+    var isAnswerCorrect = (answer === useranswer) ? 1 : 0;
+    if (question.getAttribute("type") === "quant") {
         isAnswerCorrect = typeof(QueryString.quant) === 'undefined' ? isAnswerCorrect : Number(QueryString.quant)+isAnswerCorrect;
     }
     location.href = nextpage+isAnswerCorrect;
@@ -64,8 +65,10 @@ function clickDualSubmit() {
  var useranswer2 = getUserAnswer(radios);
  var question1 = document.getElementById("options1");
  var question2 = document.getElementById("options2");
- var isAnswerCorrect = (question1.getAttribute("data-correct-answer") === useranswer1
-     &&  question2.getAttribute("data-correct-answer") === useranswer2) ? 1 : 0;
+ var answer1 = question1.getAttribute("answer");
+ var answer2 = question2.getAttribute("answer");
+ var isAnswerCorrect = (answer1 === useranswer1
+     &&  answer2 === useranswer2) ? 1 : 0;
  location.href='./Video.html'+window.location.search+'&verb='+isAnswerCorrect;
 }
 

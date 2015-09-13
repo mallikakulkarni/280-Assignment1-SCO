@@ -8,36 +8,37 @@
 </head>
 <body>
 <div id="maindiv">
-    <header>
-        <div id="staticdiv">
-            <span><b>Score Card</b></span>
-        </div>
-    </header>
+    <div id="staticdiv">
+        <span><b>Score Card</b></span>
+    </div>
     <div id="summarydiv" style="margin-left: 7em; max-height: 60%; overflow-y: auto">
-        <details>
-            <summary>
-                Quantitative Section
-            </summary>
+
+        <div id="quant" class="contracted" onclick="expand(this)"></div>
+        <div style="padding: 10px; float: left"></div>
+        <div>Quantitative Section</div>
+        <div id="quantdetails" style="height: 0; visibility: hidden">
             <h5>Number of Questions Answered: 2</h5>
             <b><h5><p id="quantanswers"></p></h5></b>
             <b><h5><p id="quantscore"></h5></b></p>
-        </details>
-        <details>
-            <summary>
-                Reading section
-            </summary>
+        </div>
+
+        <div id="verb" class="contracted" onclick="expand(this)"></div>
+        <div style="padding: 10px; float: left"></div>
+        <div>Verbal Section</div>
+        <div id="verbdetails" style="height: 0; visibility: hidden">
             <h5>Number of Questions Answered: 1</h5>
             <b><h5><p id="verbanswers"></p></h5></b>
             <b><h5><p id="verbscore"></h5></b></p>
-        </details>
-        <details>
-            <summary>
-                Audio/Video Section
-            </summary>
+        </div>
+
+        <div id="video" class="contracted" onclick="expand(this)"></div>
+        <div style="padding: 10px; float: left"></div>
+        <div>Video Section</div>
+        <div id="videodetails" style="height: 0; visibility: hidden">
             <h5>Number of Questions Answered: 1</h5>
             <b><h5><p id="videoanswers"></p></h5></b>
             <b><h5><p id="videoscore"></h5></b></p>
-        </details>
+        </div>
     </div>
     <div style="clear: left; text-align: center">
         <p><h2>Thank You!</h2></p>
@@ -54,6 +55,30 @@
     document.getElementById("verbscore").innerHTML = 'Score: ' +QueryString.verb*50;
     document.getElementById("videoanswers").innerHTML = 'Number of Correct Answers: ' +QueryString.video;
     document.getElementById("videoscore").innerHTML = 'Score: ' +QueryString.video*50;
+    function expand(arrow) {
+        console.log(arrow);
+        if (arrow.id === "quant") {
+            changeVisibility("quantdetails");
+        } else if (arrow.id === "verb") {
+            changeVisibility("verbdetails");
+        } else if (arrow.id === "video") {
+            changeVisibility("videodetails");
+        }
+        document.getElementById(arrow.id).className = arrow.className === "contracted" ? "expanded" : "contracted";
+    }
+
+    function changeVisibility(divid) {
+        console.log(divid);
+
+        if (document.getElementById(divid).style.visibility === "hidden") {
+            document.getElementById(divid).style.visibility = "visible";
+            document.getElementById(divid).style.height = "30%";
+        } else {
+            document.getElementById(divid).style.visibility = "hidden";
+            document.getElementById(divid).style.height = 0;
+        }
+    }
+
 </script>
 </body>
 </html>

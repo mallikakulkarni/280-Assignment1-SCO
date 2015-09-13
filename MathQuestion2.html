@@ -47,72 +47,24 @@
 </head>
 <body>
 <div id="maindiv">
-    <header>
-        <div id="staticdiv">
-            <span><b>Question 2</b></span>
-        </div>
-    </header>
+    <div id="staticdiv">
+        <span><b>Question 2</b></span>
+    </div>
     <div id="questiondiv">
-        <div id="question" data-question-type="quant" data-correct-answer="a">
+        <div id="question" type="quant" answer="a">
             <p>Select the cosine theorem formula</p>
             <table style="margin-left: 7em; text-align: left">
                 <tr style="height: 10em">
                     <td style="width: 25em">
                         <div>
                             <input type="radio" value="a" name="mark1">
-                            <math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mrow>
-                                    <msup>
-                                        <i>
-                                            <mi>cos</mi>
-                                            <mi>(</mi>
-                                            <mi>&alpha;</mi>
-                                            <mi>&PlusMinus;</mi>
-                                            <mi>&beta;</mi>
-                                            <mi>)</mi>
-                                            <mo>=</mo>
-                                            <mi>cos</mi>
-                                            <mi>&alpha;</mi>
-                                            <mi>cos</mi>
-                                            <mi>&beta;</mi>
-                                            <mi>&MinusPlus;</mi>
-                                            <mi>sin</mi>
-                                            <mi>&alpha;</mi>
-                                            <mi>sin</mi>
-                                            <mi>&beta;</mi>
-                                        </i>
-                                    </msup>
-                                </mrow>
-                            </math>
+                            <img src="./images/cos1.png" width="200">
                         </div>
                     </td>
                     <td>
                         <div>
                             <input type="radio" value="b" name="mark1">
-                            <math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mrow>
-                                    <msup>
-                                        <i>
-                                            <mi>sin</mi>
-                                            <mi>(</mi>
-                                            <mi>&alpha;</mi>
-                                            <mi>&PlusMinus;</mi>
-                                            <mi>&beta;</mi>
-                                            <mi>)</mi>
-                                            <mo>=</mo>
-                                            <mi>sin</mi>
-                                            <mi>&alpha;</mi>
-                                            <mi>cos</mi>
-                                            <mi>&beta;</mi>
-                                            <mi>&PlusMinus;</mi>
-                                            <mi>cos</mi>
-                                            <mi>&alpha;</mi>
-                                            <mi>sin</mi>
-                                            <mi>&beta;</mi>
-                                        </i>
-                                    </msup>
-                                </mrow>
-                            </math>
+                            <img src="./images/sin1.png" width="200">
                         </div>
                     </td>
                 </tr>
@@ -120,102 +72,28 @@
                     <td style="width: 25em">
                         <div>
                             <input type="radio" value="c" name="mark1">
-                            <math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mrow>
-                                    <msup>
-                                        <i>
-                                            <mi>sin</mi>
-                                            <mi>&alpha;</mi>
-                                            <mo>+</mo>
-                                            <mi>sin</mi>
-                                            <mi>&beta;</mi>
-                                            <mo>=</mo>
-                                            <mi>2</mi>
-                                            <mi>sin</mi>
-                                            <mi>(</mi>
-                                                <mfrac>
-                                                    <mrow>
-                                                        <mi>&alpha;</mi>
-                                                        <mo>+</mo>
-                                                        <mi>&beta;</mi>
-                                                    </mrow>
-                                                    <mn>2</mn>
-                                                </mfrac>
-                                            <mi>)</mi>
-                                            <mi>cos</mi>
-                                            <mi>(</mi>
-                                            <mfrac>
-                                                <mrow>
-                                                    <mi>&alpha;</mi>
-                                                    <mo>+</mo>
-                                                    <mi>&beta;</mi>
-                                                </mrow>
-                                                <mn>2</mn>
-                                            </mfrac>
-                                            <mi>)</mi>
-                                        </i>
-                                    </msup>
-                                </mrow>
-                            </math>
+                            <img src="./images/sin2.png" width="200">
                         </div>
                     </td>
                     <td>
                         <div>
                             <input type="radio" value="d" name="mark1">
-                            <math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mrow>
-                                    <msup>
-                                        <i>
-                                            <mi>sin</mi>
-                                            <mi>&alpha;</mi>
-                                            <mo>-</mo>
-                                            <mi>sin</mi>
-                                            <mi>&beta;</mi>
-                                            <mo>=</mo>
-                                            <mi>2</mi>
-                                            <mi>cos</mi>
-                                            <mi>(</mi>
-                                            <mfrac>
-                                                <mrow>
-                                                    <mi>&alpha;</mi>
-                                                    <mo>+</mo>
-                                                    <mi>&beta;</mi>
-                                                </mrow>
-                                                <mn>2</mn>
-                                            </mfrac>
-                                            <mi>)</mi>
-                                            <mi>sin</mi>
-                                            <mi>(</mi>
-                                            <mfrac>
-                                                <mrow>
-                                                    <mi>&alpha;</mi>
-                                                    <mo>+</mo>
-                                                    <mi>&beta;</mi>
-                                                </mrow>
-                                                <mn>2</mn>
-                                            </mfrac>
-                                            <mi>)</mi>
-                                        </i>
-                                    </msup>
-                                </mrow>
-                            </math>
+                            <img src="./images/sin3.png" width="200">
                         </div>
                     </td>
                 </tr>
             </table>
         </div>
-        <footer>
-            <div style="clear: left">
-                <button style="border-color: black; width: 15em; border-radius: 5px;"
-                        onclick="clickSubmit('./English.html?quant=')">
-                    <b>Submit and Next Question</b>
-                </button>
-                <button style="border-color: black; width: 15em; border-radius: 5px;"
-                        onclick="clickReset()">
-                    <b>Cancel and clear solution</b>
-                </button>
-            </div>
-        </footer>
+        <div style="clear: left">
+            <button style="border-color: black; width: 15em; border-radius: 5px;"
+                    onclick="clickSubmit('./English.html?quant=')">
+                <b>Submit and Next Question</b>
+            </button>
+            <button style="border-color: black; width: 15em; border-radius: 5px;"
+                    onclick="clickReset()">
+                <b>Cancel and clear solution</b>
+            </button>
+        </div>
     </div>
 </div>
 </body>

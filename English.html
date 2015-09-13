@@ -8,11 +8,9 @@
 </head>
 <body>
 <div id="maindiv">
-    <header>
-        <div id="staticdiv">
-            <span><b>Question 3</b></span>
-        </div>
-    </header>
+    <div id="staticdiv">
+        <span><b>Question 3</b></span>
+    </div>
     <div id="questiondiv">
         <div id="question">
             <p>As per latest twitter news, complete the article snippet given by selecting appropriate choices
@@ -46,27 +44,25 @@
         </div>
         <div id="paragraph">
             <p>""<br>
-                Twitter wants more cash. The company announced two <mark onclick="displayOptions('options1', 'visible')">$_____</mark> million debt offerings in a filing today
+                Twitter wants more cash. The company announced two <span id="mark1" onclick="displayOptions('options1', 'visible')">$_____</span> million debt offerings in a filing today
                 each with a potential $100 increase provided the sales are oversubscribed. Assuming full tip, including
-                the $100 million boosters, <mark onclick="displayOptions('options2', 'visible')">_____</mark> will raise upto $1.5 billion with the two offerings.
+                the $100 million boosters, <span id="mark2" onclick="displayOptions('options2', 'visible')">_____</span> will raise upto $1.5 billion with the two offerings.
                 <br>
                 <br>
                 ""
                 <br>
                 Source: http://techcrunch.com/2014/09/10/twitter-to-raise-upto-1.5billion-in-debt offering</p>
         </div>
-        <footer>
-            <div style="clear: left">
-                <button style="border-color: black; width: 15em; border-radius: 5px;"
-                        onclick="clickDualSubmit()">
-                    <b>Submit and Next Question</b>
-                </button>
-                <button style="border-color: black; width: 15em; border-radius: 5px;"
-                        onclick="clickDualReset()">
-                    <b>Cancel and clear solution</b>
-                </button>
-            </div>
-        </footer>
+        <div style="clear: left">
+            <button style="border-color: black; width: 15em; border-radius: 5px;"
+                    onclick="clickDualSubmit()">
+                <b>Submit and Next Question</b>
+            </button>
+            <button style="border-color: black; width: 15em; border-radius: 5px;"
+                    onclick="clickDualReset()">
+                <b>Cancel and clear solution</b>
+            </button>
+        </div>
     </div>
 </div>
 </body>

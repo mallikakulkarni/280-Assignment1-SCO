@@ -8,97 +8,27 @@
 </head>
 <body>
 <div id="maindiv">
-    <header>
-        <div id="staticdiv">
-            <span><b>Question 1</b></span>
-        </div>
-    </header>
+    <div id="staticdiv">
+        <span><b>Question 1</b></span>
+    </div>
     <div id="questiondiv">
-        <div id="question" data-question-type="quant" data-correct-answer="c" style="text-align: left">
+        <div id="question" type="quant" answer="c" style="text-align: left">
             <p>Given points (x1, y1) and (x2, y2), select the formula to find the equation of the given line</p>
             <div style="float: left; width: 15em; padding-top: 20%; padding-bottom: 5%">
                 <input type="radio" value="a" name="mark1">
-                <math xmlns="http://www.w3.org/1998/Math/MathML">
-                    <i>
-                        <mi>y</mi>
-                        <mo>=</mo>
-                        <mi>mx</mi>
-                        <mo>+</mo>
-                        <mi>c</mi>
-                    </i>
-                </math>
+                <img src="./images/Line.png" width="100">
             </div>
             <div style="float: left; width: 15em; padding-top: 20%; padding-bottom: 5%">
                 <input type="radio" value="b" name="mark1">
-                <math xmlns="http://www.w3.org/1998/Math/MathML">
-                    <mrow>
-                        <msup>
-                            <i>
-                                <mfenced open="(" close=")">
-                                    <mi>(</mi>
-                                    <mrow>
-                                        <mi>x</mi>
-                                        <mo>-</mo>
-                                        <mi>h</mi>
-                                    </mrow>
-                                    <mi>)</mi>
-                                </mfenced>
-                                <mn>2</mn>
-                                <mo>+</mo>
-                                <mfenced open="(" close=")">
-                                    <mi>(</mi>
-                                    <mrow>
-                                        <mi>y</mi>
-                                        <mo>-</mo>
-                                        <mi>k</mi>
-                                    </mrow>
-                                </mfenced>
-                                <mi>)</mi>
-                                <mn>2</mn>
-                            </i>
-                        </msup>
-                    </mrow>
-                </math>
+                <img src="./images/Parabola.png" width="200">
             </div>
             <div style="width: 15em; float: left">
                 <input type="radio" value="c" name="mark1">
-                <math xmlns="http://www.w3.org/1998/Math/MathML">
-                    <i>
-                        <mi>y</mi>
-                        <mo>-</mo>
-                        <mi>y1</mi>
-                        <mo>=</mo>
-                        <mi>m</mi>
-                        <mi>(</mi>
-                        <mi>x</mi>
-                        <mo>-</mo>
-                        <mi>x1</mi>
-                        <mi>)</mi>
-                    </i>
-                </math>
+                <img src="./images/Line2.png" width="150">
             </div>
             <div style="width: 15em; float: left">
                 <input type="radio" value="d" name="mark1">
-                <math xmlns="http://www.w3.org/1998/Math/MathML">
-                    <i>
-                        <mi>y2</mi>
-                        <mo>-</mo>
-                        <mi>y1</mi>
-                        <mo>=</mo>
-                        <mi>y2</mi>
-                        <mi>-</mi>
-                        <mi>y1</mi>
-                        <mo>/</mo>
-                        <mi>x2</mi>
-                        <mi>-</mi>
-                        <mi>x1</mi>
-                        <mi>(</mi>
-                        <mi>x</mi>
-                        <mi>-</mi>
-                        <mi>x2</mi>
-                        <mi>)</mi>
-                    </i>
-                </math>
+                <img src="./images/Line3.png" width="150">
             </div>
         </div>
         <div id="figure">
@@ -106,18 +36,16 @@
                 <img src="./line.png" alt="line" width="300px" height="300px">
             </figure>
         </div>
-        <footer>
-            <div style="clear: left">
-                <button style="border-color: black; width: 15em; border-radius: 5px;"
-                        onclick="clickSubmit('./MathQuestion2.html?quant=')">
-                    <b>Submit and Next Question</b>
-                </button>
-                <button style="border-color: black; width: 15em; border-radius: 5px;"
-                        onclick="clickReset()">
-                    <b>Cancel and clear solution</b>
-                </button>
-            </div>
-        </footer>
+        <div style="clear: left">
+            <button style="border-color: black; width: 15em; border-radius: 5px;"
+                    onclick="clickSubmit('./MathQuestion2.html?quant=')">
+                <b>Submit and Next Question</b>
+            </button>
+            <button style="border-color: black; width: 15em; border-radius: 5px;"
+                    onclick="clickReset()">
+                <b>Cancel and clear solution</b>
+            </button>
+        </div>
     </div>
 </div>
 </body>
